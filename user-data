@@ -1,0 +1,38 @@
+#cloud-config
+hostname: os2borgerpc
+manage_etc_hosts: true
+packages:
+- avahi-daemon
+apt:
+  conf: |
+    Acquire {
+      Check-Date "false";
+    };
+
+users:
+- name: superuser
+  groups: users,adm,dialout,audio,netdev,video,plugdev,cdrom,games,input,gpio,spi,i2c,render,sudo
+  shell: /bin/bash
+  lock_passwd: false
+  plain_text_passwd: superuser
+
+ssh_pwauth: true
+
+timezone: Europe/Copenhagen
+runcmd:
+  - localectl set-x11-keymap "dk" pc105
+  - setupcon -k --force || true
+  - 'echo Downloader OS2BorgerPC klienten'
+  - 'curl -Lo OS2BorgerPC-client.zip "https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/archive/refs/heads/main.zip"'
+  - 'apt-get update'
+  - 'apt-get install unzip'
+  - 'unzip OS2BorgerPC-client.zip'
+  - 'rm OS2BorgerPC-client.zip'
+  - 'chmod +x os2borgerpc-kiosk-rpi-image-main/scripts/*.sh'
+  - 'cat os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
+  - 'echo 2.0.0 >> os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
+  - 'mv os2borgerpc-kiosk-rpi-image-main/scripts/* /usr/local/bin/'
+  - 'rm -r os2borgerpc-kiosk-rpi-image-main'
+  - 'cd /usr/local/bin'
+  - './install_dependencies.sh'
+ 
