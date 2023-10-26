@@ -29,7 +29,7 @@ runcmd:
   - 'unzip OS2BorgerPC-client.zip'
   - 'rm OS2BorgerPC-client.zip'
   - 'chmod +x os2borgerpc-kiosk-rpi-image-main/scripts/*.sh'
-  - 'cat os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
+  - 'touch os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
   - 'echo 2.0.0 >> os2borgerpc-kiosk-rpi-image-main/scripts/VERSION'
   - 'mv os2borgerpc-kiosk-rpi-image-main/scripts/* /usr/local/bin/'
   - 'rm -r os2borgerpc-kiosk-rpi-image-main'
