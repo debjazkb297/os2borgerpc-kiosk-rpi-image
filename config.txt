@@ -43,3 +43,8 @@ dtoverlay=dwc2
 dtoverlay=dwc2,dr_mode=host
 
 [all]
+# Needed to have xrandr detect the display on HDMI1. If missing rotate screen won't work
+hdmi_group=1
+hdmi_mode=95
+dtoverlay=vc4-fkms-v3d
+disable_overscan=1
