@@ -11,15 +11,9 @@
 6. Run `sudo os2borgerpc_kiosk_setup`
 
 ## Cloning your RPI ##
-After step 5 - before you run `sudo os2borgerpc_kiosk_setup` - is a good time to clone your RPI. The result is a generic OS2BorgerPC RPI image. This image can be applied to new SD-cards using the Raspberry PI Imager software. In this way you can quickly configure multiple OS2BorgerPC Kiosk RPIs. 
+After step 5 - before you run `sudo os2borgerpc_kiosk_setup` - is a good time to clone your RPI. The result is a generic OS2BorgerPC RPI image. This image can be applied to new SD-cards using the Raspberry PI Imager software. In this way you can quickly make more OS2BorgerPC Kiosk RPIs. 
 
-## This happens on first boot ##
-This happens automatically on first boot. The RPI must have network connection.
-- Creates superuser
-- Changes the hostname to os2borgerPC
-- Danish keyboard and timezone
-- Installs the os2borgerpc client
-- HDMI setup
+
   
 
 
