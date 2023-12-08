@@ -33,4 +33,5 @@ runcmd:
   - 'rm -r os2borgerpc-kiosk-rpi-image-main'
   - 'cd /usr/local/bin'
   - './install_dependencies.sh'
+  - 'sed -ir "s/^[#]*\s*preserve_hostname:.*/preserve_hostname: true/" /etc/cloud/cloud.cfg'
  
