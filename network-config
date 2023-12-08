@@ -1,0 +1,14 @@
+version: 2
+wifis:
+  renderer: networkd
+  wlan0:
+    dhcp4: true
+    dhcp-identifier: mac
+    optional: true
+    access-points:
+      "SSID": {}
+ethernets:
+  eth0:
+    dhcp4: true
+    dhcp-identifier: mac
+    optional: true
