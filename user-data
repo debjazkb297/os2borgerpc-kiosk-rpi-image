@@ -1,6 +1,6 @@
 #cloud-config
-hostname: os2borgerpc
-manage_etc_hosts: true
+preserve_hostname: true
+manage_etc_hosts: localhost
 apt:
   conf: |
     Acquire {
