@@ -6,7 +6,11 @@
 3. Overwrite these two files with the ones provided in this project.
    - `user-data`
    - `config.txt`
-4. Now your can insert the SD-card into the RPI and boot. IMPORTANT: Your RPI must be connected to the internet during first boot
+   - `network-config`
+
+
+4. Validate the contents of `network-config` as it will be inserted into /etc/netplan/config.yml and thereby become the network setup for your RPI. You might have different networking preferences. The provided version both support wired connection and wifi. Please provide the SSID you want the RPI to connect to. 
+5. Now your can insert the SD-card into the RPI and boot. IMPORTANT: Your RPI must be connected to the internet during first boot
 5. On first boot cloud-init configures the RPI and installs OS2BorgerPC client. Wait for cloud-init to finish.
 6. Run `sudo os2borgerpc_kiosk_setup`
 
