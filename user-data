@@ -1,5 +1,5 @@
 #cloud-config
-preserve_hostname: true
+hostname: os2borgerpc
 manage_etc_hosts: localhost
 apt:
   conf: |
