@@ -3,7 +3,7 @@
 This guide has been tested on a Raspberry Pi 4.
 
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
-1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on a PC.
+1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on a PC. I have used a Lenovo Laptop running Ubuntu, but it should be possible from Windows too.
 2. Place a SD-card in the card reader of your PC.
 3. Start the Raspberry Pi Imager program
    - In **Raspberry Pi Device** select **Raspberry Pi 4**
