@@ -9,21 +9,27 @@ This guide has been tested on a Raspberry Pi 4.
    - In **Raspberry Pi Device** select **Raspberry Pi 4**
    - In **Operating system**. Scroll down and unfold **Other general-purpose OS**. Choose **Ubuntu**. Scroll down and select **Ubuntu Server 22.04.04 LTS (64 bit)**
    - In **Storage**. Choose the SD-card you have inserted.
-   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/5fe1044c-099b-4608-97ec-374a01dfdec0" width="500">
+   <br><br>
+   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/5fe1044c-099b-4608-97ec-374a01dfdec0" width="800">
 
 
 5. Then you are asked if you want to apply OS customization settings. Press **No**. We do that by applying our own config-files in the next step.
-   ![image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/4d967a39-a7d9-44a0-a625-9361ee86069e)
+    <br><br>
+   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/4d967a39-a7d9-44a0-a625-9361ee86069e" width="600">
+   <br><br>
 
+7. Now confirm to continue. Press **Yes**
+   <br><br>
+   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/095c50c3-b1b3-4b24-8e1a-7acb26dbd397" width="600">
+   <br><br>
 
-6. Now confirm to continue. Press **Yes**
-   ![image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/095c50c3-b1b3-4b24-8e1a-7acb26dbd397)
+9. The Ubuntu Image is written to your SD-card. This will take a few minutes.
 
-7. The Ubuntu Image is written to your SD-card this will take a few minutes.
+---
    
-
-8. When done, access the  SD-card through the file manager. Open the `system-boot` directory.
-10. Overwrite these two files with the ones provided in this project.
+Now we need to configure the Ubuntu Image with some custom configuration files.
+1. Access the  SD-card through the file manager. Open the `system-boot` directory.
+12. Overwrite these two files with the ones provided in this project.
    - `user-data`
    - `config.txt`
    - `network-config`
