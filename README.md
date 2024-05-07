@@ -47,7 +47,7 @@ Now we need to configure the Ubuntu Image with some custom configuration files.
 After step 4 - before you run `sudo os2borgerpc_kiosk_setup` - is a good time to clone your RPI. The result is a generic OS2BorgerPC RPI image. This image can be applied to new SD-cards using the Raspberry PI Imager software. In this way you can quickly make more OS2BorgerPC Kiosk RPIs. 
 
 1. Turn off your RPI and remove the SD-card
-2. Insert the SD-card into a card reader of a PC. In this guide I use a Linux PC.
+2. Insert the SD-card into a card reader of a PC. In have used a Lenovo Laptop running Ubuntu.
 3. Follow this very fine guide to make an image from your Raspberry Pi SD-card (https://www.pragmaticlinux.com/2020/12/how-to-clone-your-raspberry-pi-sd-card-in-linux/)
    
 
