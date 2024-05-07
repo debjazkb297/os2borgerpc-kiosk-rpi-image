@@ -29,19 +29,22 @@ This guide has been tested on a Raspberry Pi 4.
    
 Now we need to configure the Ubuntu Image with some custom configuration files.
 1. Access the  SD-card through the file manager. Open the `system-boot` directory.
-12. Overwrite these two files with the ones provided in this project.
+    <br><br>
+   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/0f6667fd-6ae9-4c45-bf35-94f64ae21c2e" width="800">
+   <br><br>
+
+2. Overwrite three files with the ones provided in this project.
    - `user-data`
    - `config.txt`
    - `network-config`
 
-
-11. Validate the contents of `network-config` as it will be inserted into /etc/netplan/config.yml and thereby become the network setup for your RPI. You might have different networking preferences. The provided version both support wired connection and wifi. Please provide the SSID you want the RPI to connect to. 
-12. Now your can insert the SD-card into the RPI and boot. IMPORTANT: Your RPI must be connected to the internet during first boot
-5. On first boot cloud-init configures the RPI and installs OS2BorgerPC client. Wait for cloud-init to finish.
-6. Run `sudo os2borgerpc_kiosk_setup`
+3. Validate the contents of `network-config`. It will be inserted into /etc/netplan/config.yml and thereby become the network setup for your RPI. You might have different networking preferences. The provided version both support wired connection and wifi. Please provide the SSID you want the RPI to connect to. 
+4. Now your can insert the SD-card into the RPI and boot. **IMPORTANT**: Your RPI **must** be connected to the internet during first boot
+ On first boot cloud-init configures the RPI and installs the OS2BorgerPC client. Wait for cloud-init to finish. It can take a few minutes.
+5. Now you are ready to connect the RPI to OS2BorgerPC Admin. Run `sudo os2borgerpc_kiosk_setup` as you would normally do after installing a OS2BorgerPC Kiosk PC.
 
 ## Cloning your RPI ##
-After step 5 - before you run `sudo os2borgerpc_kiosk_setup` - is a good time to clone your RPI. The result is a generic OS2BorgerPC RPI image. This image can be applied to new SD-cards using the Raspberry PI Imager software. In this way you can quickly make more OS2BorgerPC Kiosk RPIs. 
+After step 4 - before you run `sudo os2borgerpc_kiosk_setup` - is a good time to clone your RPI. The result is a generic OS2BorgerPC RPI image. This image can be applied to new SD-cards using the Raspberry PI Imager software. In this way you can quickly make more OS2BorgerPC Kiosk RPIs. 
 
 1. Turn off your RPI and remove the SD-card
 2. Insert the SD-card into a card reader of a PC. In this guide I use a Linux PC.
