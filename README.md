@@ -1,16 +1,37 @@
 # Raspberry Pi OS2BorgerPC Kiosk Image #
 
+This guide has been tested on a Raspberry Pi 4.
+
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
-1. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/). Use it to install Ubuntu 22.04 Server (64 bit) on a SD-card.
-2. While you have the SD-card in the card reader open the `system-boot` directory in a file manager.
-3. Overwrite these two files with the ones provided in this project.
+1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on a PC.
+2. Place a SD-card in the card reader of your PC.
+3. Start the Raspberry Pi Imager program
+   - In **Raspberry Pi Device** select **Raspberry Pi 4**
+   - In **Operating system**. Scroll down and unfold **Other general-purpose OS**. Choose **Ubuntu**. Scroll down and select **Ubuntu Server 22.04.04 LTS (64 bit)**
+   - In **Storage**. Choose the SD-card you have inserted.
+  
+   ![image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/5fe1044c-099b-4608-97ec-374a01dfdec0)
+
+
+4. Then you are asked if you want to apply OS customization settings. Press **No**. We do that by applying our own config-files in the next step.
+   ![image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/4d967a39-a7d9-44a0-a625-9361ee86069e)
+
+
+5. Now confirm to continue. Press **Yes**
+   ![image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/095c50c3-b1b3-4b24-8e1a-7acb26dbd397)
+
+6. The Ubuntu Image is written to your SD-card this will take a few minutes.
+   
+
+7. When done, access the  SD-card through the file manager. Open the `system-boot` directory.
+10. Overwrite these two files with the ones provided in this project.
    - `user-data`
    - `config.txt`
    - `network-config`
 
 
-4. Validate the contents of `network-config` as it will be inserted into /etc/netplan/config.yml and thereby become the network setup for your RPI. You might have different networking preferences. The provided version both support wired connection and wifi. Please provide the SSID you want the RPI to connect to. 
-5. Now your can insert the SD-card into the RPI and boot. IMPORTANT: Your RPI must be connected to the internet during first boot
+11. Validate the contents of `network-config` as it will be inserted into /etc/netplan/config.yml and thereby become the network setup for your RPI. You might have different networking preferences. The provided version both support wired connection and wifi. Please provide the SSID you want the RPI to connect to. 
+12. Now your can insert the SD-card into the RPI and boot. IMPORTANT: Your RPI must be connected to the internet during first boot
 5. On first boot cloud-init configures the RPI and installs OS2BorgerPC client. Wait for cloud-init to finish.
 6. Run `sudo os2borgerpc_kiosk_setup`
 
