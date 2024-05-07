@@ -1,6 +1,6 @@
 # Raspberry Pi OS2BorgerPC Kiosk Image #
 
-This guide has been tested on a Raspberry Pi 4.
+DISCLAIMER: This is an experimental project not supported by Magenta. It has been developed by Agnete Moos, Sønderborg Kommune with support from Dennis Borup Jacobsen, Aarhus Kommune. Questions or comments should be directed to Agnete Moos agms@sonderborg.dk.
 
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
 1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on a PC. I have used a Lenovo Laptop running Ubuntu, but it should be possible from Windows too.
