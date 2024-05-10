@@ -1,5 +1,8 @@
 # Raspberry Pi OS2BorgerPC Kiosk Image #
 
+   <img src="https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/assets/1641342/3d7cc208-148c-44e5-a444-a693ab52f44e" width="600">
+   <br><br>
+
 DISCLAIMER: This is an experimental project not supported by Magenta. It has been developed by Agnete Moos, Sønderborg Kommune with support from Dennis Borup Jacobsen, Aarhus Kommune. Questions or comments should be directed to Agnete Moos agms@sonderborg.dk.
 
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
