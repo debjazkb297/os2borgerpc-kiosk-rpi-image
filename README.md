@@ -90,7 +90,7 @@ Use these two scripts to install Chromium and launch the browser in full screen.
 A commonly discussed problem is that SD-cards are worn out, when beeing used as a hard drive, that does a lot of read-write operations. 
 A way to protect the SD-card is to make it read-only. The way to accomplish that is to enable the [Overlay read-only file system](https://en.wikipedia.org/wiki/OverlayFS).
 
-When the Overlay filesystem is enabled, all changes to the harddisk are instead stored in RAM. Changes you make to the filessytem are not persisted - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem, do your changes and then turn Overlay filesystem back on.
+When the Overlay filesystem is enabled, changes you make to the filesystem are stored in RAM and not persisted for long - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem, do your changes and then turn Overlay filesystem back on.
 
 Script to [Turn the Overlay Filesystem on/off](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi_overlayfs.sh)
 
