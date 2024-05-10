@@ -73,16 +73,19 @@ If you want cooling and the RPI to look more "Intel NUC-like" you can choose the
 You need to install a custom software package support the power button and cooling regulation. 
 
 Here is a OS2borgerPC scripts that installs the software:
-[Argon One v2 case - software package installation]()
+[Argon One v2 case - software package installation](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi-argon-case.sh)
 
 ## Chromium installation and startup
 Use these two scripts to install Chromium and launch the browser in full screen.
+[Install Chromium on RPI](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi_chromium_install.sh)
+[Launch Chromium on RPI](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi-chromiumsetup.sh
 
 ## Protect the SD-card by making it read-only
-It is a well documented problem that SD-cards are worn out, when beeing used as a hard drive that does a lot of read-write operations. 
+A commonly discussed problem is that SD-cards are worn out, when beeing used as a hard drive, that has to do a lot of read-write operations. 
 A way to protect the SD-card is to make it read-only. The way to accomplish that is to install the [Overlay read-only file system](https://en.wikipedia.org/wiki/OverlayFS).
 
-When the Overlay filesystem is enabled, all changes to the harddisk are instead stored in RAM. Changes you make to the filessytem are not persisted - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem. Then do your changes and then turn Overlay filesystem back on.
+When the Overlay filesystem is enabled, all changes to the harddisk are instead stored in RAM. Changes you make to the filessytem are not persisted - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem, do your changes and then turn Overlay filesystem back on.
+[Turn the Overlay Filesystem on/off](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi_overlayfs.sh)
 
 
 
