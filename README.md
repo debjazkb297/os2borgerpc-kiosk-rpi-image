@@ -87,7 +87,7 @@ Use these two scripts to install Chromium and launch the browser in full screen.
 [Launch Chromium on RPI](https://github.com/bibsdb/os2borgerpc-local-scripts/blob/master/2204rpi-chromiumsetup.sh)
 
 ## Protect the SD-card by making it read-only
-A commonly discussed problem is that SD-cards are worn out, when beeing used as a hard drive, that does a lot of read-write operations. 
+A commonly discussed problem is that SD-cards are worn out, when being used as a hard drive, that does a lot of read-write operations. 
 A way to protect the SD-card is to make it read-only. The way to accomplish that is to enable the [Overlay read-only file system](https://en.wikipedia.org/wiki/OverlayFS).
 
 When the Overlay filesystem is enabled, changes you make to the filesystem are stored in RAM and not persisted for long - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem, do your changes and then turn Overlay filesystem back on.
