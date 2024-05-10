@@ -16,9 +16,9 @@ DISCLAIMER: This is an experimental project not supported by Magenta. It has bee
 
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
 You can not use the standard OS2BorgerPC Kiosk Image on a Raspberry Pi because RPI use an ARM processor, that is not build on the x86 chip architecture.
-There are key diffrences in how you install a RPI. You don´t run an installer to enter username, timezone and other prefereces and information. Instead you modify configuration files in the image and the boot the RPI. On boot the settings are applied.
+There are key differences in how you install a RPI. You don´t run an installer to enter username, timezone and other preferences and information. Instead you modify configuration files in the image and the boot the RPI. On boot the settings are applied.
 
-We start with a gereric Ubuntu Server 22.04.04 LTS (64 bit) ARM image. We modify it to be a OS2BorgerPC RPI Kiosk Image and then we boot an Raspberry Pi with this image. On first boot the magic happens. The OS2BorgerPC Client is installed and you preferences are applied. 
+We start with a generic Ubuntu Server 22.04.04 LTS (64 bit) ARM image. We modify it to be a OS2BorgerPC RPI Kiosk Image and then we boot an Raspberry Pi with this image. On first boot the magic happens. The OS2BorgerPC Client is installed and you preferences are applied. 
 
 1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on a PC. I have used a Lenovo Laptop running Ubuntu, but it should be possible from Windows too.
 2. Place a SD-card in the card reader of your PC.
@@ -56,7 +56,7 @@ Now we need to configure the Ubuntu Image with some custom configuration files.
    - `network-config`
 
 3. Validate the contents of `network-config`. It will be inserted into /etc/netplan/config.yml and thereby become the network setup for your RPI. You might have different networking preferences. The provided version both support wired connection and wifi. Please provide the SSID you want the RPI to connect to. 
-4. Now your can insert the SD-card into the RPI and boot. **IMPORTANT**: Your RPI **must** be connected to the internet during first boot
+4. Now you can insert the SD-card into the RPI and boot. **IMPORTANT**: Your RPI **must** be connected to the internet during first boot
  On first boot cloud-init configures the RPI and installs the OS2BorgerPC client. Wait for cloud-init to finish. It can take a few minutes.
 5. Now you are ready to connect the RPI to OS2BorgerPC Admin. Run `sudo os2borgerpc_kiosk_setup` as you would normally do after installing a OS2BorgerPC Kiosk PC.
 
