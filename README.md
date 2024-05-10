@@ -65,7 +65,11 @@ Install a RPI as described above.  After boot - but before you connect to the Ad
 1. Turn off your RPI and remove the SD-card
 2. Insert the SD-card into a card reader of a PC. In have used a Lenovo Laptop running Ubuntu.
 3. Follow this very fine guide to make an image from your Raspberry Pi SD-card (https://www.pragmaticlinux.com/2020/12/how-to-clone-your-raspberry-pi-sd-card-in-linux/)
-   
+
+## The RPI case
+The official Raspberry Pi case is simple and cheap. It has no on/off button, no HDMI port and it doesn't provide cooling for the CPU. If you want the RPI to look more "Intel NUC-like" you can choose the [Argon One v2 case](https://raspberrypi.dk/en/product/argon-one-case-for-pi-4-aluminum-with-cooling/) (If it is out of stock just mail them...)
+You need to install a custom software package to regulate the fan.
+
 
 
   
