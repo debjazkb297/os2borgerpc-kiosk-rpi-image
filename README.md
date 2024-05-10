@@ -8,7 +8,8 @@ DISCLAIMER: This is an experimental project not supported by Magenta. It has bee
 
 ###### Contents
 [How to create a bootable OS2BorgerPC RPI Kiosk Image]()
-[Cloning your Raspberry Pi 
+[Speed up the process - Clone your Raspberry Pi SD-card and turn it into an img-file]()
+
 
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
 You can not use the standard OS2BorgerPC Kiosk Image on a Raspberry Pi because RPI use an ARM processor, that is not build on the x86 chip architecture.
@@ -57,7 +58,9 @@ Now we need to configure the Ubuntu Image with some custom configuration files.
 5. Now you are ready to connect the RPI to OS2BorgerPC Admin. Run `sudo os2borgerpc_kiosk_setup` as you would normally do after installing a OS2BorgerPC Kiosk PC.
 
 ## Speed up the process - Clone your Raspberry Pi SD-card and turn it into an img-file
-If you need to make more than a few OS2BorgerPC Kiosk RPIs you want to speed up the process. Install a RPI as described above.  After boot - but before you connect to the Admin system - you can take a snapshot of the SD-card and turn it into a .img file. This image can be applied to new SD-cards using the Raspberry PI Imager software. Thereby you make pre-installed OS2BorgerPCs. Just insert a preinstalled SD-card into a RPI, turn it on and run `sudo os2borgerpc_kiosk_setup`. You are ready to rock!
+If you need to make more than a few OS2BorgerPC Kiosk RPIs you want to speed up the process. 
+
+Install a RPI as described above.  After boot - but before you connect to the Admin system - you can take a snapshot of the SD-card and turn it into a .img file. This image can be applied to new SD-cards using the Raspberry PI Imager software. Thereby you make pre-installed OS2BorgerPCs. Just insert a preinstalled SD-card into a RPI, turn it on and run `sudo os2borgerpc_kiosk_setup`. You are ready to rock!
 
 1. Turn off your RPI and remove the SD-card
 2. Insert the SD-card into a card reader of a PC. In have used a Lenovo Laptop running Ubuntu.
