@@ -7,8 +7,11 @@
 DISCLAIMER: This is an experimental project not supported by Magenta. It has been developed by Agnete Moos, Sønderborg Kommune with support from Dennis Borup Jacobsen, Aarhus Kommune. Questions or comments should be directed to Agnete Moos agms@sonderborg.dk.
 
 ###### Contents
-[How to create a bootable OS2BorgerPC RPI Kiosk Image]()
-[Speed up the process - Clone your Raspberry Pi SD-card and turn it into an img-file]()
+[How to create a bootable OS2BorgerPC RPI Kiosk Image](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#how-to-create-a-bootable-os2borgerpc-rpi-kiosk-image)
+[Speed up the process - Clone your Raspberry Pi SD-card and turn it into an img-file](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#speed-up-the-process---clone-your-raspberry-pi-sd-card-and-turn-it-into-an-img-file)
+[The RPI case](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#the-rpi-case)
+[Chromium installation and startup](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#chromium-installation-and-startup)
+[Protect the SD-card by making it read-only](https://github.com/bibsdb/os2borgerpc-kiosk-rpi-image/blob/main/README.md#protect-the-sd-card-by-making-it-read-only)
 
 
 ## How to create a bootable OS2BorgerPC RPI Kiosk Image ##
