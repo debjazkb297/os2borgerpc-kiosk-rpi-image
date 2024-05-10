@@ -88,7 +88,7 @@ Use these two scripts to install Chromium and launch the browser in full screen.
 
 ## Protect the SD-card by making it read-only
 A commonly discussed problem is that SD-cards are worn out, when beeing used as a hard drive, that does a lot of read-write operations. 
-A way to protect the SD-card is to make it read-only. The way to accomplish that is to install the [Overlay read-only file system](https://en.wikipedia.org/wiki/OverlayFS).
+A way to protect the SD-card is to make it read-only. The way to accomplish that is to enable the [Overlay read-only file system](https://en.wikipedia.org/wiki/OverlayFS).
 
 When the Overlay filesystem is enabled, all changes to the harddisk are instead stored in RAM. Changes you make to the filessytem are not persisted - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem, do your changes and then turn Overlay filesystem back on.
 
