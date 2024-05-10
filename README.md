@@ -67,8 +67,24 @@ Install a RPI as described above.  After boot - but before you connect to the Ad
 3. Follow this very fine guide to make an image from your Raspberry Pi SD-card (https://www.pragmaticlinux.com/2020/12/how-to-clone-your-raspberry-pi-sd-card-in-linux/)
 
 ## The RPI case
-The official Raspberry Pi case is simple and cheap. It has no on/off button, no HDMI port and it doesn't provide cooling for the CPU. If you want the RPI to look more "Intel NUC-like" you can choose the [Argon One v2 case](https://raspberrypi.dk/en/product/argon-one-case-for-pi-4-aluminum-with-cooling/) (If it is out of stock just mail them...)
-You need to install a custom software package to regulate the fan.
+The official Raspberry Pi case is simple and cheap. It has no on/off button, no HDMI port and it doesn't provide cooling for the CPU. 
+
+If you want cooling and the RPI to look more "Intel NUC-like" you can choose the [Argon One v2 case](https://raspberrypi.dk/en/product/argon-one-case-for-pi-4-aluminum-with-cooling/) (If it is out of stock just mail them...)
+You need to install a custom software package support the power button and cooling regulation. 
+
+Here is a OS2borgerPC scripts that installs the software:
+[Argon One v2 case - software package installation]()
+
+## Chromium installation and startup
+Use these two scripts to install Chromium and launch the browser in full screen.
+
+## Protect the SD-card by making it read-only
+It is a well documented problem that SD-cards are worn out, when beeing used as a hard drive that does a lot of read-write operations. 
+A way to protect the SD-card is to make it read-only. The way to accomplish that is to install the [Overlay read-only file system](https://en.wikipedia.org/wiki/OverlayFS).
+
+When the Overlay filesystem is enabled, all changes to the harddisk are instead stored in RAM. Changes you make to the filessytem are not persisted - they are gone upon reboot. Even changes made by superuser disappears. If you need to make lasting changes, you have to turn off Overlay filesystem. Then do your changes and then turn Overlay filesystem back on.
+
+
 
 
 
